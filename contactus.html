@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Travel Mania</title>
+</head>
+<body>
+<div class="heading">Contact Us</div>
+<br><br>
+<div class="container1">
+  <form name="contact" action="action.php" method="POST">
+    <label>First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+
+    <label>Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+    <label>Email id</label>
+    <input type="email" id="email" name="email" placeholder="abcd@gmail.com" required>
+
+     <input type="radio" id="male" name="gender" value="male">
+     <label>Male</label><br>
+     <input type="radio" id="female" name="gender" value="female">
+     <label>Female</label><br>
+     <input type="radio" id="other" name="gender" value="other">
+     <label>Other</label> 
+     <br><br>
+    <label>Country</label>
+    <select id="country" name="country">
+      <option value="india">India</option> 
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label>Message</label>
+    <textarea id="subject" name="message" placeholder="Write something.." required></textarea>
+    <input type="submit" id="submit" name="submit" value="Submit" class="button">
+  </form>
+</div> 
+</body>
+<style>
+label{
+font-style:bold;
+font-family:garamond;
+font-size:20px;
+}
+body{
+background-color:#80aaff;
+}
+.heading {
+  font-size: 40px;
+  margin-right: 25px;
+  font-family:garamond;
+  font-style:bold;
+  margin-left:44%;
+  padding-top:10px;
+}
+.container1{
+  border:#4d4d4d 1px solid;
+  padding:5px;
+  border-radius: 5px;
+  background-color: #ccddff;
+  padding: 10px;
+  width:60%;
+ margin:auto;
+} 
+input[type=text], input[type=email], select, textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 6px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 5px; /* Add a top margin */
+  margin-bottom: 15px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.button{
+ background-color: #04AA6D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px; background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #2e6b31;
+}
+@media screen and (max-width: 600px) {
+  .container1,.heading,.button {
+    width: 100%;
+    margin-top: 0;
+}
+}
+</style>
+</html>
